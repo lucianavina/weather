@@ -26,7 +26,7 @@ const [search, saveSearch] = useState({
       if (call) {
 
         const appID = '0758ac202eecd8c67a8df893bcedbbd5'
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appID}`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appID}`
 
         const response = await fetch(url)
         const result = await response.json()
